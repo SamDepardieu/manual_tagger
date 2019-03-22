@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="index__content">
+    {% if is_populated == True %}
+        You have a dataset.
+        <a href="{{ url_for('main.start_label') }}">Start Labeling</a> or <a href="">Reset</a>
+    {% else %}
+            Please upload a json file to begin.
+
+            <form action="{{ url_for('main.upload_file') }}"
+                  method="post" enctype="multipart/form-data"
+                  class="index__form">
+                <input name="file" type="file" allowed_file="json,csv"/>
+                <input type="submit" value="Submit">
+            </form>
+
+    {% endif %}
+</div>
+
+{% endblock %}

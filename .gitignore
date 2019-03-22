@@ -1,0 +1,7 @@
+__pycache__
+*.pyc
+
+build
+instance/db.sqlite
+classifier/uploads/*
+!classifier/uploads/.gitkeep

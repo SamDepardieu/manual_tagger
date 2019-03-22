@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    {% block head %}{% endblock %}
+    <title>The Classifier{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav class="header"><a href="{{ url_for('main.index') }}"><h1>The Classifier</h1></a>
+        {% if stats is defined %}
+            <span class="stat">{{ stats.minutes }}/m</span>
+            <span class="stat red">{{ stats.others }} Others</span>
+            <span class="stat green">{{ stats.refs }} Refs</span>
+        {% endif %}
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>

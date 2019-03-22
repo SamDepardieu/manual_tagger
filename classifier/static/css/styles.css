@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    min-height: 10vh;
+    padding: 25px;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header a :hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.stat {
+    float: right;
+    color: #fff;
+    margin: 0 15px;
+}
+
+.red {
+    color: red !important;
+}
+
+.green {
+    color: green !important;
+}
+
+.index__content {
+    padding: 25px;
+}
+
+.index__form * {
+    display: block;
+    margin: 20px 0;
+}
+
+.index__form input {
+    font-size: 1.5em;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid black;
+    padding:10px;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 90vh;
+    left: 0;
+    bottom: 0;
+}
+
+.right {
+    background-color: rgba(0, 255, 100, 0.01);
+    color: rgba(0, 255, 100, 0.2);
+    display: inline-block;
+    width: 50%;
+    height:100vh;
+    min-height: 500px;
+    text-align: right;
+    padding: 30% 10%;
+    font-size: 50px;
+}
+
+.left {
+    background-color: rgba(255, 0, 0, 0.05);
+    color: rgba(255, 0, 0, 0.2);
+    display: inline-block;
+    width: 50%;
+    height:100vh;
+    min-height: 500px;
+    text-align: left;
+    padding: 30% 10%;
+    font-size: 50px;
+}
+.text {
+    text-align: left;
+    font-size: 30px;
+    padding: 50px 20%;
+}
